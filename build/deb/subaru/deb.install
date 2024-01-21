@@ -1,0 +1,5 @@
+build/bin/{{.BinaryName}} usr/bin
+{{- if eq .BinaryName "gsu" }}
+build/deb/subaru/completions/bash/gsu etc/bash_completion.d
+build/deb/subaru/completions/zsh/_gsu usr/share/zsh/vendor-completions
+{{end -}}
